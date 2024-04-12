@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
 		return 1;
         }
 
-    if(argv[1] !="number.txt") { // display error
+    if(argv[1] !="number.txt ") { // display error
         printf("Error. Cannot open requested file.");
 		return 1;
         }
