@@ -3,8 +3,19 @@ int main(int argc, char *argv[]){
     
 	
 	// Enter your code under here to read the filename from the command line
-	
-	
+	if(argv[1] == NULL) { // display error
+        printf("Error. Expected 1 filename.");
+		return 1;
+        }
+	if(argv[2] != NULL) { // display error
+        printf("Error. Expected 1 filename.");
+		return 1;
+        }
+
+    if(argv[1] !="number.txt") { // display error
+        printf("Error. Cannot open requested file.");
+		return 1;
+        }
 	
 	// Read number from file - do not edit
 	double num;
