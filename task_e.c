@@ -29,12 +29,8 @@ int main(int argc, char *argv[]){
 	
 
 	// Enter your code from Lab D to print JSON output (with name, email, number1, number2) goes under here
-    char name[]="Bo Zhang";
-	char email[]="bo.zhang-17@student.manchester.ac.uk";
-	printf("{\"name\": \"%s\",\n", name);
-	printf(" \"email\": \"%s\",\n", email);
-	printf(" \"number1\": %.2f,\n", num);
-    printf(" \"number2\": %.3e}\n", num);
+	printf("%.2f\n", num);
+ 
 	
 
 	// Do not edit below here
