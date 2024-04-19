@@ -12,7 +12,12 @@ int main(int argc, char *argv[]){
         printf("Error. Expected 1 filename.");
 		return 1;
         }
+	FILE* f;
+     	if ( (f = fopen(argv[1], "r")) == NULL) { 
 
+        printf("Error. Cannot open requested file."); 
+
+        return -1; }
 
 	// Read number from file - do not edit
 	double num;
@@ -23,11 +28,7 @@ int main(int argc, char *argv[]){
 
    
 	// Enter your code from Lab D to print JSON output (with name, email, number1, number2) goes under here
-     	if ( (fptr = fopen(argv[1], "r")) == NULL) { 
 
-        printf("Error. Cannot open requested file."); 
-
-        return -1; }
       printf("%.2f\n", num) ;
       
 
