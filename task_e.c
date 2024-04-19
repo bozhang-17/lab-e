@@ -32,7 +32,7 @@ int main(int argc, char *argv[]){
 	char email[]="bo.zhang-17@student.manchester.ac.uk";
 	printf("{\"name\": \"%s\",\n", name);
 	printf(" \"email\": \"%s\",\n", email);
-	printf(" \"number1\": %.2lf,\n", num);
+	printf(" \"number1\": %.2lf,}", num);
     // printf(" \"number2\": %.3e}\n", num);
       
 
