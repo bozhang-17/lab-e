@@ -25,11 +25,10 @@ int main(int argc, char *argv[]){
 	fptr = fopen(argv[1], "r");
 	fscanf(fptr, "%lf", &num);
 	fclose(fptr);
-
    
 	// Enter your code from Lab D to print JSON output (with name, email, number1, number2) goes under here
 
-      printf("%.2f\n", num) ;
+      printf("%.2lf", num) ;
       
 
 	// Do not edit below here
