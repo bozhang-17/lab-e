@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
 	fclose(fptr);
 	if ( (fptr = fopen(argv[1], "r")) == NULL) { 
 
-        printf("Error. Cannot open %s", argv[1]); 
+        printf("Error. Cannot open requested file."); 
 
         return -1; }
    
