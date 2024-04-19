@@ -20,14 +20,14 @@ int main(int argc, char *argv[]){
 	fptr = fopen(argv[1], "r");
 	fscanf(fptr, "%lf", &num);
 	fclose(fptr);
-	if ( (fptr = fopen(argv[1], "r")) == NULL) { 
+
+   
+	// Enter your code from Lab D to print JSON output (with name, email, number1, number2) goes under here
+     	if ( (fptr = fopen(argv[1], "r")) == NULL) { 
 
         printf("Error. Cannot open requested file."); 
 
         return -1; }
-   
-	// Enter your code from Lab D to print JSON output (with name, email, number1, number2) goes under here
-     
       printf("%.2f\n", num) ;
       
 
