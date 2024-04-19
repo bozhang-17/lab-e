@@ -13,25 +13,23 @@ int main(int argc, char *argv[]){
 		return 1;
         }
 
-	
-    char str1[] = "number.txt";
 
-    if(strcmp(str1, argv[1]) != 0) { // display error
-        printf("Error. Cannot open requested file.");
-		return 1;
-        }
 	// Read number from file - do not edit
 	double num;
 	FILE *fptr;
 	fptr = fopen(argv[1], "r");
 	fscanf(fptr, "%lf", &num);
 	fclose(fptr);
-	
+	if ( (fptr = fopen(argv[1], "r")) == NULL) { 
+
+        printf("Error. Cannot open %s", argv[1]); 
+
+        return -1; }
    
 	// Enter your code from Lab D to print JSON output (with name, email, number1, number2) goes under here
-     if(strcmp(str1, argv[1]) == 0) { // display error
+     
       printf("%.2f\n", num) ;
-        }
+      
 
 	// Do not edit below here
 	return 0;
